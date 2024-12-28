@@ -1,0 +1,165 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+.row{
+    display: flex;
+}
+.wrap{
+    width: 100%;
+    height: 100vh;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#logoText{
+    width: 460px;
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    translate: -50% 0%;
+    font-size: 40px;
+    font-weight: 700;
+    animation: logoText 1s;
+}
+@keyframes logoText{
+    from{
+        top: 6%;
+        opacity: 0;
+    }
+}
+
+.inputContainer{
+    width: 500px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.250);
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.500);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    overflow: hidden;
+    position: fixed;
+    top: 25%;
+    animation: input 1s;
+}
+@keyframes input{
+    from{
+        margin-top: 50px;
+        opacity: 0;
+    }
+}
+.input{
+    width: 100%;
+    height: calc(100% - 20px);
+    background-color: rgba(0, 0, 0, 0.500);
+    outline: none;
+    border: none;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.input button {
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    transition: 300ms;
+    cursor: pointer;
+}
+.input button:hover{
+    transform: scale(1.02);
+}
+.input .row{
+    gap: 5px;
+}
+#randomAC{
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+}
+#acceptCharacter{
+    width: 400px;
+    height: 50px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 700;
+}
+#numberCharacters{
+    width: 430px;
+    cursor: pointer;
+}
+#generatePassword{
+    font-size: 15px;
+    font-weight: 700;
+    padding: 10px 25px;
+    margin-bottom: -70px;
+}
+.range{
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.150);
+    padding: 10px;
+    border-radius: 10px;
+}
+.outputContainer{
+    width: 500px;
+    height: 100px;
+    position: fixed;
+    top: calc(15% + 440px);
+    background-color: rgba(0, 0, 0, 0.250);
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.500);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    overflow: hidden;
+    position: fixed;
+    animation: output 1s;
+}
+@keyframes output{
+    from{
+        top: calc(15% + 400px);
+        opacity: 0;
+    }
+}
+.output{
+    width: 100%;
+    height: calc(100% - 20px);
+    background-color: rgba(0, 0, 0, 0.500);
+    outline: none;
+    border: none;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.output p{
+    font-size: 20px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.700);
+    margin-left: 10px;
+}
+#errorAlert{
+    display: none;
+    color: rgb(222, 96, 96);
+    font-size: 15px;
+    font-weight: 600;
+    position: absolute;
+    bottom: 200px;
+    margin-right: 330px;
+}

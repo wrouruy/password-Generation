@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>password-Generation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.css' integrity='sha512-GmZYQ9SKTnOea030Tbiat0Y+jhnYLIpsGAe6QTnToi8hI2nNbVMETHeK4wm4MuYMQdrc38x+sX77+kVD01eNsQ==' crossorigin='anonymous'/>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js' integrity='sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw==' crossorigin='anonymous'></script>
+</head>
+<body>
+    <div class="wrap">
+        <p id="logoText">password generation</p>
+        <div class="inputContainer">
+            <p style="margin-left: 10px;">input</p>
+            <div class="input">
+                <p id="errorAlert">fill in this field</p>
+                <div class="row">
+                    <input type="text" id="acceptCharacter" placeholder="allowed characters for the password ">
+                    <button type="button" id="randomAC" title="random characters are allowed"><i class="fa-solid fa-dice-three"></i></button>
+                </div>
+                <div class="range">
+                    <p></p>
+                    <input type="range" id="numberCharacters" min="1" max="30" step="1">
+                </div>
+                <button type="button" id="generatePassword">generate password</button>
+            </div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
